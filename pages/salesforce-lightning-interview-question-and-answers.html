@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>ForceLearn | Learn Salesforce Developmenet tips and tricks</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>ForceLearn</strong></a>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Generic</h1>
+									</header>
+
+									<span class="image main"><img src="../images/pic11.jpg" alt="" /></span>
+									<h3>What is Lightning component framework ?</h3>
+									<p>Lightning component framework is UI framework which helps to design dynamic web apps to mobile and desktop with high responsive
+									</p>
+
+									
+									<h3> What is use of Lightning component framework ?</h3>
+									<p>Lightning component framework helps to design out of box components with rich ecosystem and high performance. It is also Event-Driven architecture</h3>
+									</p>
+									<h3> What are component in Salesforce Lightning ?</h3>
+									<p> Components is a piece of code(Building blocks of page) which helps to reusable to anywhere we want.</h3>
+									<h3> Which Framework Lightning Supports ?</h3>
+									<p> Lightning Supports (Aura) component-based framework.</p>
+									<h3> How many types of events available ?</h3>
+									<p> Component Event Scope of this event is within itself or the parent component of this event, all the components declared within the parent component would get notified of this event( managed by the component itself).</p>
+									<p>Application Event is handled by all components that are subscribed to the event. These events are essentially a traditional publish-subscribe model.</p>
+									<h3> What is Aura ?</h3>
+									<p> Aura is UI framework to built dynamic web apps for mobile and desktop devices into lightning.</p>
+									<h3> What is SLDS stands for ?</h3>
+									<p> Salesforce Lightning Design System.</p>
+									<h3> What is Lightning Bundle?</h3>
+									<p> Lightning Bundle contains Component,Controller,Helper,style,documentation,rerender,design,SVG with it.</p>
+									<h3> To design Lightning components, Do we need to create a custom domain ?</h3>
+									<p> Yes, we need to custom domain to built lightning component. By using custom domain helps use to make our organization more secure while authentication.</p>
+									<h3> Is it mandotary to create custom namespaces to develop lightning components ?</h3>
+									<p> No, Its Optional, But if need we can create with Namespace also.</p>
+									<h3> What is Salesforce lightning experience?</h3>
+									<p> Lightning Experience is a modern user interface that helps your sales reps sell faster and your service reps support customers more productively. Lightning Experience includes many new features and entirely redesigned pages, but not every Salesforce feature is supported in Lightning Experience.</p>
+									<h3> What is difference between Visualforce Components and lightning components?</h3>
+									<p> Visualforce components are page-centric and most of the work is done on the server. Lightning is designed from the component up, rather than having the concept of a page as its fundamental unit. Lightning Components are client-side centric, which makes them more dynamic and mobile friendly.</p>
+									<h3> What is lightning connect?</h3>
+									<p> Lightning Connect lets you seamlessly access data from external sources, side-by-side with your Salesforce data. You can pull data from legacy systems such as SAP, Microsoft and Oracle in real time, without making a copy of the data in Salesforce.</p>
+									<h3> How do I turn on lightning in Salesforce?</h3>
+									<p> From Setup in Salesforce Classic, click Get Started in the Migration Assistant tile at the top of the menu. On the Turn It On tab in the Migration Assistant, click the button to switch it to Enabled. That’s it!</p>
+									<h3> What is OData in Salesforce?</h3>
+									<p> Lightning Connect enables your users to view and search records that are stored outside Salesforce, such as data in an enterprise resource planning (ERP) system. To connect to an external data source, Lightning Connect uses the Open Data Protocol (OData)</p>
+									<h3> What is renderer in lightning component?</h3>
+									<p> When a component is rendered or rerendered, the aura:valueRender event, also known as the render event, is fired. Handle this event to perform post-processing on the DOM or react to component rendering or rerendering. The event is preferred and easier to use than the alternative of creating a custom renderer.</p>
+									<h3> What is the use of lightning in Salesforce?</h3>
+									<p> Lightning makes it easier to build responsive applications for any device. Lightning includes these technologies: Lightning components give you a client-server framework that accelerates development, as well as app performance, and is ideal for use with the Salesforce mobile app and Salesforce Lightning Experience.</p>
+									<h3> What are the type of events into Salesforce Lightning component?</h3>
+									<p> Application Event Scope of this event is throughout the lightning App and any component which has registered for this event would get a notification.</p>
+									Component Event Scope of this event is within itself or the parent component of this event, all the components declared within the parent component would get notified of this event.</p>
+									System Event- these are the events fired by Salesforces system during the lifecycle of the lightning app.</p>
+									<h3> What are the basic differences between Application Event and Component Event?</h3>
+									<p> Component events are used to do communication between child and parent. They use bubbling and capture same as used in DOM events. A change in a child component can be communicated to the parent component via component event.</p>
+
+									<p>Application events are used to communicate any change in the component to a broader audience. Any component who has registered for this event will get a notified.</p>
+									<h3> Which interface we are supposed to implement so that a lightning component can be used as quick action?</h3>
+									<p> We need to implement the following force: lightningQuickAction so that we can use the component as a Quick Action</p>
+									<h3> Which interface we are supposed to implement so that a lightning component can be used as a Tab?</h3>
+									<p> We need to implement the following force:appHostable so that we can use the component as a Tab</p>
+									<h3> How can we use a lightning component in a VisualForce Page?</h3>
+									<p> A Lightning component can be embed in any webpage using a very powerful and flexible feature, Lighting out. When used with Visualforce some complexity becomes simpler.</p>
+									Lightning component can be added to Visualforce page in three steps:</br>
+									1. We have to first Add the Lightning Components for Visualforce JavaScript library to your targetted Visualforce page using the tag.</br>
+									2. Next we have to create and refer a Lightning app which is used to the component dependencies.</br>
+									3. Lastly we need to write a JavaScript function which will finally create the the component on the page using $Lightning.createComponent()</br>
+									<h3> How can we call child component controller method from the parent component controller method?</h3>
+									<p> To call a child components controller method, we need to first create a aura:method which is publically accessible, aura:method is used to communicate down the containment hierarchy i.e. parent to child.</p>
+									<h3> How can we use Lightning Components with the Salesforce1 Mobile App ?</h3>
+									<p> We need to first make a lightning tab which points to the lightning component we created and then we have to include that tab in the salesforce1 Mobile Navigation select list and the newly created tab to it.</p>
+									<h3> Can we make one component inherit styles/CSS from a parent component, or must we always define it in the component ?</h3>
+									<p> Child component inherits the CSS from its arent we do not need to specify it for each component</p>
+									<h3> What is the use of the aura:method tag in Lightning ?</h3>
+									<p> aura:method is used to communicate down the containment hierarchy i.e. parent to child</p>
+									<h3> Can we Include One Lightning component to another ?</h3>
+									<p> Yes we can include one Lightning component in another Lightning component</p>
+									<h3> Is there any limit on how many component to have in one Application?</h3>
+									<p> There is no limit on number of components defined within an application by salesforce</p>
+									<h3> Is Lightning Components replacing Visualforce?</h3>
+									<p> No Lightning component is not replacing Visualforce, Visualforce is still supported by Salesforce.</p>
+									<h3> What is Aura? Why do we use the aura: namespace in the code?</h3>
+									<p> Aura is a UI framework for developing dynamic web apps for mobile and desktop devices. Aura provides a scalable long-lived lifecycle to support building apps engineered for growth.Aura supports partitioned multi-tier component development that bridges the client and server. It uses JavaScript on the client side and Java on the server side.</p>
+									<h3> Do we need a namespace to develop Lightning Components?</h3>
+									<p> You can have namespace in your org but it is not necessary to have a namespace to develop lightning component.</p>
+
+									
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="../index.html">Home</a></li>
+										<li>
+											<span class="opener">Interview</span>
+											<ul>
+												<li><a href="../pages/salesforce-lightning-interview-question-and-answers.html">Lightning</a></li>
+												<li><a href="../pages/apttus-cpq-interview-questions-and-answers.html">CPQ</a></li>
+												<li><a href="../pages/salesforce-visualforce-interview-question-and-answers.html">VisualForce</a></li>
+												<li><a href="../pages/salesforce-integration-interview-question-and-answers.html">Integration</a></li>
+												<li><a href="../pages/salesforce-dev-interview-question-and-answers.html">Dev</a></li>
+											</ul>
+										</li>
+										<li><a href="../pages/about-us.html">About Me</a></li>
+										<li><a href="../pages/guest-post.html">Guest Post</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Popular Posts</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>Do you have any queries please reach out us.</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">forcelearn@gmail.com</a></li>
+										<li class="icon solid fa-phone">+91- 9666844498</li>
+										<li class="icon solid fa-home">Bangalore, India</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+								<p class="copyright">&copy; ForceLearn. All rights reserved.
+								</p>
+							    </footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

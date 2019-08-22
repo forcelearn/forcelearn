@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Set Up Two-Factor Authentication in Salesforce</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <a href="../index.html" class="logo"><strong>ForceLearn</strong></a>
+            <ul class="icons">
+              <li>
+                <a
+                  href="https://twitter.com/forcelearn"
+                  target="_blank"
+                  class="icon brands fa-twitter"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/ForceLearn.comsfdc/"
+                  target="_blank"
+                  class="icon brands fa-facebook-f"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://in.linkedin.com/company/forcelearn"
+                  target="_blank"
+                  class="icon brands fa-linkedin-in"
+                  ><span class="label">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://medium.com/@forcelearn"
+                  target="_blank"
+                  class="icon brands fa-medium-m"
+                  ><span class="label">Medium</span></a
+                >
+              </li>
+            </ul>
+          </header>
+
+          <!-- Content -->
+          <section>
+            <header class="main">
+              <h1>Set Up Two-Factor Authentication in Salesforce</h1>
+            </header>
+            <span class="image main">
+              <img src="../images/blogpost/Set Up Two-Factor Authentication in Salesforce/header.png" alt=""/>
+            </span>
+            <h1>Set Up Two-Factor Authentication in Salesforce</h1>
+
+<p><b>Two-Factor Authentication</b> is helps you secure more our authentication based on user login. Two-Factor Authentication contains two things or two factor required to access your account. The first factor is <b>something your knows</b> like your username and password and second factor is <b>Something you have</b> like connected mobile device which show secure code need to matched to successfully login to your account.</p>
+<p>Two-Factor Authentication is also known as 2FA, two step verification or TFA.</p><br><br>
+<p>We utilize Two-Factor Authentication many more time in our day to day activites like when you access you google account when email is connected to mobile device it shows popup like numerical to tap that matches on your screen. When you are making any banking transaction, you will get OTP(One Time Password) is required to completed your transaction successfully.</p><br>
+<p>Now its time to secure your <b>salesforce</b> org from risk vulnerabilities.</p><br>
+<h2>How to Set Up Two-Factor Authentication in Salesforce ??</h2>
+<p>Firstly, you need to create permission set for two factor Authentication</p>
+<p>path : Setup — Administer — Manage users – Permission Set</p>
+<p>click on New</p>
+<span class="image main">
+    <img src="../images/blogpost/Set Up Two-Factor Authentication in Salesforce/Permission_Set_Two_Factor_Authenticate.png" alt=""/>
+</span>
+<p>Label as Two_Factor_Authenticate</p>
+<p>Api is Auto generated like</p>
+<p>click on save.</p><br>
+<p>then move to Under system, click on System Permissions.</p>
+<span class="image main">
+    <img src="../images/blogpost/Set Up Two-Factor Authentication in Salesforce/System_Two_Factor_Authenticate.png" alt=""/>
+</span>
+<p>click on edit and check Two-Factor Authentication for User Interface Logins and click on save.</p>
+<span class="image main">
+    <img src="../images/blogpost/Set Up Two-Factor Authentication in Salesforce/Two_Factor_Authentication_For_Users.png" alt=""/>
+</span>
+<p>Tap on Manage Assignments and add assignments to required use to required two factor authentication.</p>
+<span class="image main">
+    <img src="../images/blogpost/Set Up Two-Factor Authentication in Salesforce/Assign_To_User.png" alt=""/>
+</span>
+<p>click on Assign.</p>
+<span class="image main">
+    <img src="../images/blogpost/Set Up Two-Factor Authentication in Salesforce/SucessFullY_Done.png" alt=""/>
+</span>
+<p>Tap on Done.</p>
+<p>Now you have successfully assigned permission set to user . Logout if that user is already login</p><br>
+<p>what’s more, attempt to re-login again,now you will get salesforce authenticator popup on your screen to move further you need Android or IOS application need to be installed in phone.</p>
+<span class="image main">
+    <img src="../images/blogpost/Set Up Two-Factor Authentication in Salesforce/Salesforce_Authenticator_popup.png" alt=""/>
+</span>
+<p>Download and install Salesforce Authenticator for iOS from the App Store or Salesforce Authenticator for Android from Google Play</p>
+<p>Enter your secure code to which display on phone. For first time connection it asks Two-Word Phrase which displays on Salesforce Authenticator app. Then you need to provide once you connected successfully. you need  to enter secure code which displays to mobile phone to login into your account.</p>
+<span class="image main">
+    <img src="../images/blogpost/Set Up Two-Factor Authentication in Salesforce/Mobile_Authentication.png" alt=""/>
+</span>
+<p>Then we need to enter Salesforce Authenticator secure code into your browser login page.</p>
+<span class="image main">
+    <img src="../images/blogpost/Set Up Two-Factor Authentication in Salesforce/Output_Two_Factor_Authentication.gif" alt=""/>
+</span>
+<p>you are now login to your salesforce org using two factor Authentication 🙂 🙂 🙂</p>
+<br>
+<p>Comment use if you face any problems while implementing</p><br>
+<p>Download: <a href="https://play.google.com/store/apps/details?id=com.forcelearn.salesforceqa" target="_blank"><span class="label">SalesforceQA</span></a></p><br>
+<p>
+Please comments us for more updates and share to other to help.</br>
+Keep Visiting us for more updates</br>
+Like us for more updates</br>
+Fb Page : <a href="https://www.facebook.com/ForceLearn.comsfdc/" target="_blank"><span class="label">ForceLearn</span></a></br>
+keep share to help others &nbsp;😎&nbsp;😎&nbsp;😎&nbsp;</p>
+          </section>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+          <!-- Search -->
+          <section id="search" class="alt">
+            <form method="post" action="#">
+              <input type="text" name="query" id="query" placeholder="Search" />
+            </form>
+          </section>
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li>
+                <span class="opener">BlogPost</span>
+                <ul>
+                  <li><a href="../blogpostpages/lwc.html">LWC</a></li>
+                  <li>
+                    <a href="../blogpostpages/lightning.html">Lightning</a>
+                  </li>
+                  <li>
+                    <a href="../blogpostpages/visualforce.html">VisualForce</a>
+                  </li>
+                  <li>
+                    <a
+                      href="../pages/salesforce-integration-interview-question-and-answers.html"
+                      >More ..</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Interview</span>
+                <ul>
+                  <li>
+                    <a
+                      href="../pages/salesforce-lightning-interview-question-and-answers.html"
+                      >Lightning</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../pages/apttus-cpq-interview-questions-and-answers.html"
+                      >CPQ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../pages/salesforce-visualforce-interview-question-and-answers.html"
+                      >VisualForce</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../pages/salesforce-integration-interview-question-and-answers.html"
+                      >Integration</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../pages/salesforce-dev-interview-question-and-answers.html"
+                      >Dev</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li><a href="../pages/about-us.html">About Me</a></li>
+              <li><a href="../pages/guest-post.html">Guest Post</a></li>
+            </ul>
+          </nav>
+
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>Popular Posts</h2>
+            </header>
+            <div class="mini-posts">
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic07.jpg" alt=""
+                /></a>
+                <p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore aliquam.
+                </p>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic08.jpg" alt=""
+                /></a>
+                <p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore aliquam.
+                </p>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic09.jpg" alt=""
+                /></a>
+                <p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore aliquam.
+                </p>
+              </article>
+            </div>
+            <ul class="actions">
+              <li><a href="#" class="button">More</a></li>
+            </ul>
+          </section>
+
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>Get in touch</h2>
+            </header>
+            <p>Do you have any queries please reach out us.</p>
+            <ul class="contact">
+              <li class="icon solid fa-envelope">
+                <a href="#">forcelearn@gmail.com</a>
+              </li>
+              <li class="icon solid fa-phone">+91- 9666844498</li>
+              <li class="icon solid fa-home">Bangalore, India</li>
+            </ul>
+          </section>
+
+          <!-- Footer -->
+          <footer id="footer">
+            <p class="copyright">&copy; ForceLearn. All rights reserved.</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

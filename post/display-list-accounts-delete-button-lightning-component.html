@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Display List of Accounts with delete button on Lightning Component</title>
+		<meta charset="utf-8" />
+		<meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="shortcut icon" type="../image/png" href="../images/favicon.png"/>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+					<!-- Header -->
+					<header id="header">
+						<a href="../index.html" class="logo">
+							<strong>ForceLearn</strong>
+						</a>
+						<ul class="icons">
+							<li>
+								<a
+                  href="https://twitter.com/forcelearn"
+                  target="_blank"
+                  class="icon brands fa-twitter"
+                  >
+									<span class="label">Twitter</span>
+								</a
+                >
+							</li>
+							<li>
+								<a
+                  href="https://www.facebook.com/ForceLearn.comsfdc/"
+                  target="_blank"
+                  class="icon brands fa-facebook-f"
+                  >
+									<span class="label">Facebook</span>
+								</a
+                >
+							</li>
+							<li>
+								<a
+                  href="https://in.linkedin.com/company/forcelearn"
+                  target="_blank"
+                  class="icon brands fa-linkedin-in"
+                  >
+									<span class="label">LinkedIn</span>
+								</a
+                >
+							</li>
+							<li>
+								<a
+                  href="https://medium.com/@forcelearn"
+                  target="_blank"
+                  class="icon brands fa-medium-m"
+                  >
+									<span class="label">Medium</span>
+								</a
+                >
+							</li>
+						</ul>
+					</header>
+					<!-- Content -->
+					<section>
+						<header class="main">
+							<h1>Display List of Accounts with delete button on Lightning Component</h1>
+						</header>
+						<span class="image main">
+							<img src="../images/blogpost/Display button on click on checkbox/header.png" alt=""/>
+						</span>
+						<p>Hi Guys,</br>                                
+                            Today Iam here to explain how to display list of accounts with delete button on Lightning component.</br></br>
+                                
+                               <strong> Business case :</strong> User need to show list of accounts and with delete button on display their page</br>
+                               <strong>Solution :</strong> we helped by designing lightning component</br>
+                               </br></br>
+                               <p>Step1 : Create a controller class </br>
+                                    Path setup- UserMenu – Developer Console -File-New Apex Class</p>
+                        <h3> AccountsController</h3>
+                    <pre><code>
+public class AccController {
+    @AuraEnabled
+    public static List getAccounts() {
+    return [SELECT Id, name, industry, Type, NumberOfEmployees, TickerSymbol, Phone 
+            FROM Account ORDER BY createdDate ASC];
+    }
+   }                               
+
+                        </code></pre>
+                        <p>Step2 : Create a lightning Component</br>
+                                Path setup- UserMenu – Developer Console -File-New Lightning Component</p>                        
+                        <h3> Account List Component</h3>
+                        <script src="https://gist.github.com/forcelearn/b096cc449e2886ce2d760334042f9137.js"></script>
+                        <p>Step3 : Create Controller for lightning Component</br>
+                                Path : Click on controller left side of our lightning component or with shortcut ctrl+shift+2</p>
+                        <h3> Account List controller</h3>
+                        <script src="https://gist.github.com/forcelearn/fab6bb9644528a95b1a34a5b891ba42c.js"></script>
+                        <p>Step4 : Create helper for lightning Component</br>
+                                Path : Click on helper left side of our lightning component or with shortcut ctrl+shift+3</p>
+                        <h3> Account List helper js</h3>
+                        <script src="https://gist.github.com/forcelearn/1fd02b1bfbd79667b7ee8a83c948b9f8.js"></script>
+                        <p>Step5 : Create lightning Component application </br>
+                                Path : setup- UserMenu – Developer Console -File-New Lightning Application</p>
+                        <h3> Account List application</h3>
+                        <script src="https://gist.github.com/forcelearn/db0f834d4bcc0bfa2b3a4336a94329d4.js"></script>
+                            <br>
+                            <p>Hola !! , we have seen list of accounts with delete button</p>
+								<br>
+									<br>
+										<p>Download: 
+											<a href="https://play.google.com/store/apps/details?id=com.forcelearn.salesforceqa" target="_blank">
+												<span class="label">SalesforceQA</span>
+											</a>
+										</p>
+										<br>
+											<p>
+Please comments us for more updates and share to other to help.
+											</br>
+Keep Visiting us for more updates
+										</br>
+Like us for more updates
+									</br>
+Fb Page : 
+									<a href="https://www.facebook.com/ForceLearn.comsfdc/" target="_blank">
+										<span class="label">ForceLearn</span>
+									</a>
+								</br>
+keep share to help others &nbsp;😎&nbsp;😎&nbsp;😎&nbsp;
+							</p>
+						</section>
+					</div>
+				</div>
+				<!-- Sidebar -->
+				<div id="sidebar">
+					<div class="inner">
+						<!-- Search -->
+						<section id="search" class="alt">
+							<form method="post" action="#">
+								<input type="text" name="query" id="query" placeholder="Search" />
+							</form>
+						</section>
+						<!-- Menu -->
+						<nav id="menu">
+							<header class="major">
+								<h2>Menu</h2>
+							</header>
+							<ul>
+								<li>
+									<a href="../index.html">Home</a>
+								</li>
+								<li>
+									<span class="opener">BlogPost</span>
+									<ul>
+										<li>
+											<a href="../blogpostpages/lwc.html">LWC</a>
+										</li>
+										<li>
+											<a href="../blogpostpages/lightning.html">Lightning</a>
+										</li>
+										<li>
+											<a href="../blogpostpages/visualforce.html">VisualForce</a>
+										</li>
+										<li>
+											<a
+                      href="../pages/salesforce-integration-interview-question-and-answers.html"
+                      >More ..</a
+                    >
+										</li>
+									</ul>
+								</li>
+								<li>
+									<span class="opener">Interview</span>
+									<ul>
+										<li>
+											<a
+                      href="../pages/salesforce-lightning-interview-question-and-answers.html"
+                      >Lightning</a
+                    >
+										</li>
+										<li>
+											<a
+                      href="../pages/apttus-cpq-interview-questions-and-answers.html"
+                      >CPQ</a
+                    >
+										</li>
+										<li>
+											<a
+                      href="../pages/salesforce-visualforce-interview-question-and-answers.html"
+                      >VisualForce</a
+                    >
+										</li>
+										<li>
+											<a
+                      href="../pages/salesforce-integration-interview-question-and-answers.html"
+                      >Integration</a
+                    >
+										</li>
+										<li>
+											<a
+                      href="../pages/salesforce-dev-interview-question-and-answers.html"
+                      >Dev</a
+                    >
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="../pages/about-us.html">About Me</a>
+								</li>
+								<li>
+									<a href="../pages/guest-post.html">Guest Post</a>
+								</li>
+							</ul>
+						</nav>
+						<!-- Section -->
+						<section>
+							<header class="major">
+								<h2>Popular Posts</h2>
+							</header>
+							<div class="mini-posts">
+								<article>
+									<a href="#" class="image"
+                  >
+										<img src="images/pic07.jpg" alt=""
+                />
+									</a>
+									<p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore aliquam.
+                </p>
+								</article>
+								<article>
+									<a href="#" class="image"
+                  >
+										<img src="images/pic08.jpg" alt=""
+                />
+									</a>
+									<p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore aliquam.
+                </p>
+								</article>
+								<article>
+									<a href="#" class="image"
+                  >
+										<img src="images/pic09.jpg" alt=""
+                />
+									</a>
+									<p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore aliquam.
+                </p>
+								</article>
+							</div>
+							<ul class="actions">
+								<li>
+									<a href="#" class="button">More</a>
+								</li>
+							</ul>
+						</section>
+						<!-- Section -->
+						<section>
+							<header class="major">
+								<h2>Get in touch</h2>
+							</header>
+							<p>Do you have any queries please reach out us.</p>
+							<ul class="contact">
+								<li class="icon solid fa-envelope">
+									<a href="#">forcelearn@gmail.com</a>
+								</li>
+								<li class="icon solid fa-phone">+91- 9666844498</li>
+								<li class="icon solid fa-home">Bangalore, India</li>
+							</ul>
+						</section>
+						<!-- Footer -->
+						<footer id="footer">
+							<p class="copyright">&copy; ForceLearn. All rights reserved.</p>
+						</footer>
+					</div>
+				</div>
+			</div>
+			<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+		</body>
+	</html>

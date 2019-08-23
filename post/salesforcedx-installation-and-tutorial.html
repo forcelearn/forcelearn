@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Learn SalesforceDX Installation and tutorial</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="shortcut icon" type="../image/png" href="../images/favicon.png"/>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <a href="../index.html" class="logo"><strong>ForceLearn</strong></a>
+            <ul class="icons">
+              <li>
+                <a
+                  href="https://twitter.com/forcelearn"
+                  target="_blank"
+                  class="icon brands fa-twitter"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/ForceLearn.comsfdc/"
+                  target="_blank"
+                  class="icon brands fa-facebook-f"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://in.linkedin.com/company/forcelearn"
+                  target="_blank"
+                  class="icon brands fa-linkedin-in"
+                  ><span class="label">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://medium.com/@forcelearn"
+                  target="_blank"
+                  class="icon brands fa-medium-m"
+                  ><span class="label">Medium</span></a
+                >
+              </li>
+            </ul>
+          </header>
+
+          <!-- Content -->
+          <section>
+            <header class="main">
+              <h1>Learn SalesforceDX Installation and tutorial</h1>
+            </header>
+            <span class="image main"
+              ><img src="../images/blogpost/Introduction to Lightning Web Components (LWC) By ForceLearn/header.png" alt=""
+            /></span>
+           
+           <p> Hello folks,</br></br>
+            Nice to see here again  😎&nbsp;</br>
+            Today Iam happy to explain you about salesforceDX.</p></br>
+<h1>What is salesforce DX ?</h1>
+<p>
+        SalesforceDx is modern and easy way to built and access apps on force.com in entire life cycle. It contains great command-line interface (CLI) removes the complexity of working with your Salesforce
+        org for development, continuous integration, and delivery
+</p>
+
+<h1>Steps to install salesforceDX</h1>
+<p>
+        1. In order to access new salesforceDX you active devhub in your org or you need to create new developer org from below url </br>
+        login new org 
+        <a href=" https://developer.salesforce.com/promotions/orgs/dx-signup" target="_blank"><span class="label"> https://developer.salesforce.com/promotions/orgs/dx-signup</span></a></br>
+        2. Install the CLI using the links below based on your operating system . </br>
+        <strong>Operating System Link to Installer</strong></br>
+        macOS          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <a href="https://sfdc.co/sfdx_cli_osx" target="_blank"><span class="label"> https://sfdc.co/sfdx_cli_osx</span></a></br>
+        Windows 32-bit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;    <a href="https://sfdc.co/sfdx_cli_win" target="_blank"><span class="label"> https://sfdc.co/sfdx_cli_win</span></a></br>
+        Windows 64-bit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     <a href="https://sfdc.co/sfdx_cli_win64" target="_blank"><span class="label"> https://sfdc.co/sfdx_cli_win64</span></a></br>
+        Debian/Ubuntu 64  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://sfdc.co/sfdx_cli_linux" target="_blank"><span class="label"> https://sfdc.co/sfdx_cli_linux</span></a></br>
+        Debian/Ubuntu x86  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="https://sfdc.co/sfdx_cli_linux_x86" target="_blank"><span class="label"> https://sfdc.co/sfdx_cli_linux_x86</span></a></br></br>
+        3. after download install file and run it open, with above package with predefined gitbash also installed in your org </br>
+        4. open gitbash and click </br>
+        <pre><code>
+        $sfdx
+        </code></pre>
+        <span class="image main"
+        ><img src="../images/blogpost/Learn SalesforceDX Installation and tutorial/1sfdx.png" alt=""
+      /></span>
+      4. type sfdxforce </br>
+      <span class="image main"
+      ><img src="../images/blogpost/Learn SalesforceDX Installation and tutorial/sfdx-force.png" alt=""
+    /></span>
+    5. type</br>
+    <pre><code>
+sfdx force --help
+            </code></pre> </br>
+    <span class="image main"
+    ><img src="../images/blogpost/Learn SalesforceDX Installation and tutorial/sfdx-force-help.png" alt=""
+  /></span>
+6. connect your salesforce org</br>
+<pre><code>
+sfdx force:auth:web:login
+        </code></pre> </br>
+  <span class="image main"
+  ><img src="../images/blogpost/Learn SalesforceDX Installation and tutorial/sfdx-force-auth.png" alt=""
+/></span>
+7. login into org provide credentials</br>
+<pre><code>
+sfdx force:org:list
+        </code></pre> </br>
+<span class="image main"
+><img src="../images/blogpost/Learn SalesforceDX Installation and tutorial/sfdx-force-org-list.png" alt=""
+/></span>
+8.  Create a new project in your local system</br>
+<pre><code>
+sfdx force:project:create -n NewProjectName
+        </code></pre> </br>
+<span class="image main"
+><img src="../images/blogpost/Learn SalesforceDX Installation and tutorial/Create-New-DXproject.png" alt=""
+/></span>
+9.open folder and open code console</br>
+<pre><code>
+Cd NewProjectName
+code .
+        </code></pre>
+        need to download form this link <a href="https://code.visualstudio.com/Download" target="_blank"><span class="label"> visual studio code</span></a> and add <a href="https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode" target="_blank"><span class="label"> Salesforce Extensions for VS Code</span></a> too</br></br>
+        10.To create new lighting component in our local org and  force-app\main\default\aura is repository where we need to store our new lightning component</br>
+        <pre><code>
+sfdx force:lightning:component:create -n myDXcomp -d force-app\main\default\aura
+        </code></pre>       
+<span class="image main"
+><img src="../images/blogpost/Learn SalesforceDX Installation and tutorial/my-DXlightning-component.png" alt=""
+/></span>
+11.create a new apex class </br>
+<pre><code>
+sfdx force:apex:class:create -n DXclass -d force-app\main\default\aura
+                </code></pre> 
+                12.push code into org </br>
+                <pre><code>
+sfdx force:source:push
+                                </code></pre> 
+<span class="image main"
+><img src="../images/blogpost/Learn SalesforceDX Installation and tutorial/push-error.png" alt=""
+/></span>
+13.In order to push you need to create a default dev org </br>
+<pre><code>
+sfdx force:config:set defaultdevhubusername=your@dx.com
+                </code></pre> 
+<span class="image main"
+><img src="../images/blogpost/Learn SalesforceDX Installation and tutorial/deafultuserorg-creation.png" alt=""
+/></span>
+14.Next push code into dev org need to create a strach org </br>
+<pre><code>
+sfdx force:org:create -s -f config\project-scratch-def.json
+                </code></pre> 
+<span class="image main"
+><img src="../images/blogpost/Learn SalesforceDX Installation and tutorial/scratch-org-creation.png" alt=""
+/></span>
+15.try to push again</br>
+<pre><code>
+sfdx force:source:push
+                </code></pre> 
+<span class="image main"
+><img src="../images/blogpost/Learn SalesforceDX Installation and tutorial/source-push.png" alt=""
+/></span>
+16.to open org</br>
+<pre><code>
+sfdx force:org:open
+                </code></pre> 
+<span class="image main"
+><img src="../images/blogpost/Learn SalesforceDX Installation and tutorial/force-org-open.png" alt=""
+/></span>
+<span class="image main"
+><img src="../images/blogpost/Learn SalesforceDX Installation and tutorial/Lightning-component.png" alt=""
+/></span>
+17.to know status</br>
+<pre><code>
+sfdx force:source:status
+                </code></pre> 
+                18.to know changes made on your org</br>
+                <pre><code>
+sfdx force:source:pull
+                                </code></pre> 
+                                19.assign permission to scratch org users</br>
+                                <pre><code>
+sfdx force:user:permset:assign -n
+                                                </code></pre> 
+                                                20. To run test classes on salesforceDX</br>
+                                                <pre><code>
+sfdx force:apex:test:run -r human
+                                                                </code></pre> 
+                                                                21. create a new project</br>
+                                                                <pre><code>
+sfdx force:project:create -n projectname myDXproject --defaultpackagedir dh-app
+                                                                                </code></pre> 
+                                                                                22. tree is used find structure</br>
+                                                                                <pre><code>
+tree
+                                                                                                </code></pre>
+                                                                                                
+
+
+                                                                                
+
+</p>
+
+<p>Download:<a href="https://play.google.com/store/apps/details?id=com.forcelearn.salesforceqa" target="_blank"><span class="label">SalesforceQA</span></a></p><br>
+<p>
+Please comments us for more updates and share to other to help.</br>
+Keep Visiting us for more updates</br>
+Like us for more updates</br>
+Fb Page : <a href="https://www.facebook.com/ForceLearn.comsfdc/" target="_blank"><span class="label">ForceLearn</span></a></br>
+keep share to help others &nbsp;😎&nbsp;😎&nbsp;😎&nbsp;</p>
+          </section>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+          <!-- Search -->
+          <section id="search" class="alt">
+            <form method="post" action="#">
+              <input type="text" name="query" id="query" placeholder="Search" />
+            </form>
+          </section>
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li>
+                <span class="opener">BlogPost</span>
+                <ul>
+                  <li><a href="../blogpostpages/lwc.html">LWC</a></li>
+                  <li>
+                    <a href="../blogpostpages/lightning.html">Lightning</a>
+                  </li>
+                  <li>
+                    <a href="../blogpostpages/visualforce.html">VisualForce</a>
+                  </li>
+                  <li>
+                    <a
+                      href="../pages/salesforce-integration-interview-question-and-answers.html"
+                      >More ..</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Interview</span>
+                <ul>
+                  <li>
+                    <a
+                      href="../pages/salesforce-lightning-interview-question-and-answers.html"
+                      >Lightning</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../pages/apttus-cpq-interview-questions-and-answers.html"
+                      >CPQ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../pages/salesforce-visualforce-interview-question-and-answers.html"
+                      >VisualForce</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../pages/salesforce-integration-interview-question-and-answers.html"
+                      >Integration</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../pages/salesforce-dev-interview-question-and-answers.html"
+                      >Dev</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li><a href="../pages/about-us.html">About Me</a></li>
+              <li><a href="../pages/guest-post.html">Guest Post</a></li>
+            </ul>
+          </nav>
+
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>Popular Posts</h2>
+            </header>
+            <div class="mini-posts">
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic07.jpg" alt=""
+                /></a>
+                <p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore aliquam.
+                </p>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic08.jpg" alt=""
+                /></a>
+                <p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore aliquam.
+                </p>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic09.jpg" alt=""
+                /></a>
+                <p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore aliquam.
+                </p>
+              </article>
+            </div>
+            <ul class="actions">
+              <li><a href="#" class="button">More</a></li>
+            </ul>
+          </section>
+
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>Get in touch</h2>
+            </header>
+            <p>Do you have any queries please reach out us.</p>
+            <ul class="contact">
+              <li class="icon solid fa-envelope">
+                <a href="#">forcelearn@gmail.com</a>
+              </li>
+              <li class="icon solid fa-phone">+91- 9666844498</li>
+              <li class="icon solid fa-home">Bangalore, India</li>
+            </ul>
+          </section>
+
+          <!-- Footer -->
+          <footer id="footer">
+            <p class="copyright">&copy; ForceLearn. All rights reserved.</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

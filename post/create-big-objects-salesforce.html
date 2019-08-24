@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>How to Create Big Objects in Salesforce</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <a href="../index.html" class="logo"><b>ForceLearn</b></a>
+            <ul class="icons">
+              <li>
+                <a
+                  href="https://twitter.com/forcelearn"
+                  target="_blank"
+                  class="icon brands fa-twitter"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/ForceLearn.comsfdc/"
+                  target="_blank"
+                  class="icon brands fa-facebook-f"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://in.linkedin.com/company/forcelearn"
+                  target="_blank"
+                  class="icon brands fa-linkedin-in"
+                  ><span class="label">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://medium.com/@forcelearn"
+                  target="_blank"
+                  class="icon brands fa-medium-m"
+                  ><span class="label">Medium</span></a
+                >
+              </li>
+            </ul>
+          </header>
+
+          <!-- Content -->
+          <section>
+            <header class="main">
+              <h1>Create Big Objects in Salesforce</h1>
+            </header>
+            <span class="image main">
+              <img src="../images/blogpost/Create Big Objects in Salesforce/header.png" alt=""/>
+            </span>
+
+<p>Today we learn about How to create <b>Big Objects in Salesforce</b> and it’s limitations<br>
+    <b>Standard objects</b> is an objects which is created for you by salesforce<br>
+    <b>Custom objects</b> is an objects which is created by you as per business requirement in salesforce<br>
+    <b>External objects</b> is an objects which helps us to access data which stores in out side of salesforce.<br>
+    <b>Big Objects</b> is an objects which helps us to store larger amount of data in salesforce.
+</p><br>
+<h2>Big Objects</h2>
+<p>Big Objects can store up to one <b>million</b> of records into your salesforce organization<br>
+    you can create up to <b>100</b> Big Objects per org. (Limit of Big Objects creation depends on your org license type)<br>
+    and Big objects is indicated with API name as <b>__b</b> like Weather__b
+</p><br>
+<h1>How to create Big Objects in Salesforce?</h1>
+<p>In order to create Big Objects we need to use only <b>Metadata API</b>, we need to create a object file, permission set file and package.xml file.</p><br>
+<p>Step 1: Create a two folder like BigobjectName and PermissionSet</p>
+<span class="image main">
+    <img src="../images/blogpost/Create Big Objects in Salesforce/BigObject-folder.png" alt=""/>
+</span>
+<p>Step 2:In Big Object folder store object information<br>
+    Note: Its need to be extension has  <b>__b</b><br><br>
+    Step 3: Add Permission set in PermissionSet folder store permission set file<br>
+    Note : its need to be extension has <b>_Permission_Set</b><br><br>
+    Step 4 : Add package.xml file need to store in major folder<br><br>
+    Step 5:then make zip it<br>
+    Step 6: Login to workbench<br>
+    Step 7: Navigation to Migration tab and click deploy
+</p>
+<span class="image main">
+    <img src="../images/blogpost/Create Big Objects in Salesforce/WorkBench.png" alt=""/>
+</span>
+<p>Step 8: Choose your BigObject.zip file and check on check only and allow package<br>
+    Step 9 : Click on Next and click on deploy<br>
+    Step 10:  You have sucessfully deployed Big Objects into your org.
+</p><br>
+<h2>Limitations :</h2>
+<ul>
+    <li>You can create up to 100 big object per org. The limits for big object fields are similar to the limits on custom objects and depend on your org’s license type.</li>
+    <li>You can’t use Salesforce Connect external objects to access big objects in another org.</li>
+    <li>Big Objects will not supports in trigger,process and flows</li>       
+    <li>Big Objects can have relationship with Standard and Custom objects</li>
+    <li>You can use Bulk API and SOAP API to create records</li>
+    <li>After creation of Big Objects you can’t modify them like adding new fields and it will display only after creation of record.</li>
+    <li>We cannot use Big objects data in reports and dashboards</li>
+    <li>We can’t see data in standard tab</li>
+</ul>
+<br>
+<p>Download: <a href="https://play.google.com/store/apps/details?id=com.forcelearn.salesforceqa" target="_blank"><span class="label">SalesforceQA</span></a></p><br>
+<p>
+Please comments us for more updates and share to other to help.</br>
+Keep Visiting us for more updates</br>
+Like us for more updates</br>
+Fb Page : <a href="https://www.facebook.com/ForceLearn.comsfdc/" target="_blank"><span class="label">ForceLearn</span></a></br>
+keep share to help others &nbsp;😎&nbsp;😎&nbsp;😎&nbsp;</p>
+          </section>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+          <!-- Search -->
+          <section id="search" class="alt">
+            <form method="post" action="#">
+              <input type="text" name="query" id="query" placeholder="Search" />
+            </form>
+          </section>
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li>
+                <span class="opener">BlogPost</span>
+                <ul>
+                  <li><a href="../blogpostpages/lwc.html">LWC</a></li>
+                  <li>
+                    <a href="../blogpostpages/lightning.html">Lightning</a>
+                  </li>
+                  <li>
+                    <a href="../blogpostpages/visualforce.html">VisualForce</a>
+                  </li>
+                  <li>
+                    <a
+                      href="../pages/salesforce-integration-interview-question-and-answers.html"
+                      >More ..</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Interview</span>
+                <ul>
+                  <li>
+                    <a
+                      href="../pages/salesforce-lightning-interview-question-and-answers.html"
+                      >Lightning</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../pages/apttus-cpq-interview-questions-and-answers.html"
+                      >CPQ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../pages/salesforce-visualforce-interview-question-and-answers.html"
+                      >VisualForce</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../pages/salesforce-integration-interview-question-and-answers.html"
+                      >Integration</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../pages/salesforce-dev-interview-question-and-answers.html"
+                      >Dev</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li><a href="../pages/about-us.html">About Me</a></li>
+              <li><a href="../pages/guest-post.html">Guest Post</a></li>
+            </ul>
+          </nav>
+
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>Popular Posts</h2>
+            </header>
+            <div class="mini-posts">
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic07.jpg" alt=""
+                /></a>
+                <p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore aliquam.
+                </p>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic08.jpg" alt=""
+                /></a>
+                <p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore aliquam.
+                </p>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic09.jpg" alt=""
+                /></a>
+                <p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore aliquam.
+                </p>
+              </article>
+            </div>
+            <ul class="actions">
+              <li><a href="#" class="button">More</a></li>
+            </ul>
+          </section>
+
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>Get in touch</h2>
+            </header>
+            <p>Do you have any queries please reach out us.</p>
+            <ul class="contact">
+              <li class="icon solid fa-envelope">
+                <a href="#">forcelearn@gmail.com</a>
+              </li>
+              <li class="icon solid fa-phone">+91- 9666844498</li>
+              <li class="icon solid fa-home">Bangalore, India</li>
+            </ul>
+          </section>
+
+          <!-- Footer -->
+          <footer id="footer">
+            <p class="copyright">&copy; ForceLearn. All rights reserved.</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

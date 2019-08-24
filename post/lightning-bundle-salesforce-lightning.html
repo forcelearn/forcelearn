@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Lightning Bundle in Salesforce Lightning</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <a href="../index.html" class="logo"><b>ForceLearn</b></a>
+            <ul class="icons">
+              <li>
+                <a
+                  href="https://twitter.com/forcelearn"
+                  target="_blank"
+                  class="icon brands fa-twitter"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/ForceLearn.comsfdc/"
+                  target="_blank"
+                  class="icon brands fa-facebook-f"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://in.linkedin.com/company/forcelearn"
+                  target="_blank"
+                  class="icon brands fa-linkedin-in"
+                  ><span class="label">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://medium.com/@forcelearn"
+                  target="_blank"
+                  class="icon brands fa-medium-m"
+                  ><span class="label">Medium</span></a
+                >
+              </li>
+            </ul>
+          </header>
+
+          <!-- Content -->
+          <section>
+            <header class="main">
+              <h1>Lightning Bundle in Salesforce Lightning</h1>
+            </header>
+            <span class="image main">
+              <img src="../images/blogpost/Lightning Bundle in Salesforce Lightning/header.png" alt=""/>
+            </span>
+<br>
+<h2>What is Lightning Component Bundle?</h2>
+<p>Lightning Bundle contains Component,Controller,Helper,style,documentation,rerender,design,SVG with it.</p><br>
+<span class="image main">
+    <img src="../images/blogpost/Lightning Bundle in Salesforce Lightning/Lightning-Bundle-in-salesforce.png" alt=""/>
+</span>
+<h3>Application</h3>
+<p>While we creating lightning application its created automatically with standard application. Lightning application store only html tags.<br>
+    The only required resource in a bundle. Contains markup for the component or app. Each bundle contains only one component or app resource.
+</p><br>
+<p>ForceLearn.app<br>
+    <script src="../../gist.github.com/forcelearn/a26fb6d110a3cac1f7c25932b74b028a.js" type="a8057e93717004cdb0ea5971-text/javascript"></script></p><br>
+<h3>Component</h3>
+<p>Lightning component are mostly used used html tags and we can use markup and HTML5 are also supported.</p><br>
+<p>ForceLearn.cmp</p>
+<p><script src="../../gist.github.com/forcelearn/6183b0feb05b89a3bfa609d12e7278de.js" type="a8057e93717004cdb0ea5971-text/javascript"></script></p><br>
+<h3>Controller</h3>
+<p>It Contains client-side controller methods to handle events in the component. It’s supports javascript to run functions in components actions and each&nbsp;function has three parameters like component,event and helper.</p><br>
+<p>ForceLearnController.js</p><br>
+<pre><code>
+( 
+  {
+    myAction : function(component, event, helper) { 
+    }
+  }
+)
+</code></pre>
+<h3>Helper</h3>
+<p>JavaScript functions that can be called from any JavaScript code in a component’s bundle.</p><br>
+<p>ForceLearnHelper.js</p><br>
+<pre><code>
+(
+  {
+    helperMethod : function(){
+    }
+  }
+)
+</code></pre>
+<h3>CSS</h3>
+<p>Contains styles for the component.we can customize application with CSS with custom CSS.</p><br>
+<p>ForceLearn.css</p><br>
+<pre><code>
+.THIS{
+}
+</code></pre>
+<h3>Documentation</h3>
+<p>In Documentation, we can design the description, sample code, and one or multiple references to example components.</p><br>
+<p>ForceLearn.auradoc<br>
+  <script src="../../gist.github.com/forcelearn/539ce74eba417b353267ed996c6e1bdd.js" type="a8057e93717004cdb0ea5971-text/javascript"></script></p><br>
+<h3>Render</h3>
+<p>Client-side renderer to override default rendering for a component.</p><br>
+<p>ForceLearnRender.js</p><br>
+<pre><code>
+(
+  {
+  // Your renderer method overrides go here
+  }
+)
+</code></pre>
+<h3>SVG</h3>
+<p>By using SVG, we can Custom icon resource for components used in the Lightning App Builder or Community Builder.</p><br>
+<p>ForceLearn.svg</p><br>
+<br>
+<br>
+<p>Download: <a href="https://play.google.com/store/apps/details?id=com.forcelearn.salesforceqa" target="_blank"><span class="label">SalesforceQA</span></a></p><br>
+<p>
+Please comments us for more updates and share to other to help.</br>
+Keep Visiting us for more updates</br>
+Like us for more updates</br>
+Fb Page : <a href="https://www.facebook.com/ForceLearn.comsfdc/" target="_blank"><span class="label">ForceLearn</span></a></br>
+keep share to help others &nbsp;😎&nbsp;😎&nbsp;😎&nbsp;</p>
+          </section>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+          <!-- Search -->
+          <section id="search" class="alt">
+            <form method="post" action="#">
+              <input type="text" name="query" id="query" placeholder="Search" />
+            </form>
+          </section>
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li>
+                <span class="opener">BlogPost</span>
+                <ul>
+                  <li><a href="../blogpostpages/lwc.html">LWC</a></li>
+                  <li>
+                    <a href="../blogpostpages/lightning.html">Lightning</a>
+                  </li>
+                  <li>
+                    <a href="../blogpostpages/visualforce.html">VisualForce</a>
+                  </li>
+                  <li>
+                    <a
+                      href="../pages/salesforce-integration-interview-question-and-answers.html"
+                      >More ..</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="opener">Interview</span>
+                <ul>
+                  <li>
+                    <a
+                      href="../pages/salesforce-lightning-interview-question-and-answers.html"
+                      >Lightning</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../pages/apttus-cpq-interview-questions-and-answers.html"
+                      >CPQ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../pages/salesforce-visualforce-interview-question-and-answers.html"
+                      >VisualForce</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../pages/salesforce-integration-interview-question-and-answers.html"
+                      >Integration</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../pages/salesforce-dev-interview-question-and-answers.html"
+                      >Dev</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li><a href="../pages/about-us.html">About Me</a></li>
+              <li><a href="../pages/guest-post.html">Guest Post</a></li>
+            </ul>
+          </nav>
+
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>Popular Posts</h2>
+            </header>
+            <div class="mini-posts">
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic07.jpg" alt=""
+                /></a>
+                <p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore aliquam.
+                </p>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic08.jpg" alt=""
+                /></a>
+                <p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore aliquam.
+                </p>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic09.jpg" alt=""
+                /></a>
+                <p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore aliquam.
+                </p>
+              </article>
+            </div>
+            <ul class="actions">
+              <li><a href="#" class="button">More</a></li>
+            </ul>
+          </section>
+
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>Get in touch</h2>
+            </header>
+            <p>Do you have any queries please reach out us.</p>
+            <ul class="contact">
+              <li class="icon solid fa-envelope">
+                <a href="#">forcelearn@gmail.com</a>
+              </li>
+              <li class="icon solid fa-phone">+91- 9666844498</li>
+              <li class="icon solid fa-home">Bangalore, India</li>
+            </ul>
+          </section>
+
+          <!-- Footer -->
+          <footer id="footer">
+            <p class="copyright">&copy; ForceLearn. All rights reserved.</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

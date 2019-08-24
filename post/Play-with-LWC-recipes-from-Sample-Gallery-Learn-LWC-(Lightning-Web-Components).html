@@ -13,7 +13,7 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="../assets/css/main.css" />
-    <link rel="shortcut icon" type="../image/png" href="../images/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>	
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -73,56 +73,29 @@
 Welcome back, Today we discuss about Sample Gallery and how can we use 
 <a href="https://trailhead.salesforce.com/en/sample-gallery" target="_blank"><span class="label">sample gallery</span></a> apps into our salesforce orgs</p>
 <h3>Play with LWC recipes from Sample Gallery  Learn LWC</h3>
-<p>To start playing with LWC recipes you need to have some Prerequisites <a href="../post/introduction-to-lightning-web-components-lwc-by-forcelearn.html" target="_blank"><span class="label">Check Here</span></a></p>
+<p>To start playing with LWC recipes you need to have some Prerequisites check here</p>
 
 <p>1. open your VS code and Paste below line of code in terminal get LWC recipes from github repo</p>
 <code>git clone https://github.com/trailheadapps/lwc-recipes.git</code>
-<span class="image main"
-><img src="../images/blogpost/play with lwc recipes from sample gallery/1.Download_LWCRecipes_Git_Repo.jpg" alt=""
-/></span>
 <p>2. Click on enter it will download all LWC recipes folder in your local machine.</p>
 <p>3. Click on File – Open folder – LWC Recipes and click on select folder</p>
     <p>4.Navigate into LWC recipes folder with</p>
 <code>cd lwc-recipes</code>
-<span class="image main"
-><img src="../images/blogpost/play with lwc recipes from sample gallery/2.Navigate-int-LWC-recipes-folder.jpg" alt=""
-/></span>
 <p>5.Authorize your dev hub</p>
-<code>sfdx force:auth:web:login -s -a Lwc-recipes</code>
-<span class="image main"
-><img src="../images/blogpost/play with lwc recipes from sample gallery/3.Authorizing-dev-hub.jpg" alt=""
-/></span>
            </p>6.Login to dev org</p>
-<span class="image main"
-><img src="../images/blogpost/play with lwc recipes from sample gallery/4.Success-Authentication-into-org.jpg" alt=""
-/></span>
+<code>sfdx force:auth:web:login -s -a Lwc-recipes</code>
 <p>7.It will open your default org and login into your salesforce org,Then your authentication has completed successfully .</p>
 <p>8.Assign Permission sets to default users</p>
 <code>sfdx force:user:permset:assign -n recipes</code>
-<span class="image main"
-><img src="../images/blogpost/play with lwc recipes from sample gallery/5.Assigning-Permission-Set-to-users.jpg" alt=""
-/></span>
 <p>9.Load Sample data into app</p>
 <code>sfdx force:data:tree:import --plan ./data/data-plan.json</code>
-<span class="image main"
-><img src="../images/blogpost/play with lwc recipes from sample gallery/6.Adding_Sample_Data.jpg" alt=""
-/></span>
 <p>10.Expand force-app — Main and right click and Navigate to SFDX: Deploy to Source org .</p>
-<span class="image main"
-><img src="../images/blogpost/play with lwc recipes from sample gallery/7.Deploy-into-Source-Org.jpg" alt=""
-/></span>
     <p>11.Your deployment is done successfully .</p>
-    <span class="image main"
-><img src="../images/blogpost/play with lwc recipes from sample gallery/8.Deployment-done-sucessfulyy.jpg" alt=""
-/></span>
         <p>12.Open you salesforce org and Click on App Launcher icon you able to find LWC application and check with it check here for application overview</p>
-        <span class="image main"
-><img src="../images/blogpost/play with lwc recipes from sample gallery/9.LWC-Recipes-in-App-Launcher.jpg" alt=""
-/></span>
-         <p>13.Hurry !!!! Your LWC recipes is ready to use. </p>
-         <span class="image main">
+        <span class="image main">
           <img src="../images/blogpost/play with lwc recipes from sample gallery/demo.gif" alt=""/>
         </span>
+         <p>13.Hurry !!!! Your LWC recipes is ready to use. </p>
 <p>We have Designed Salesforce QA Application which contains lot of interview questions on Salesforce. provide your Feedback on application.</p>
 
 <p>Download:<a href="https://play.google.com/store/apps/details?id=com.forcelearn.salesforceqa" target="_blank"><span class="label">SalesforceQA</span></a></p>

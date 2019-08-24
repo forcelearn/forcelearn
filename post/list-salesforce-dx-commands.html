@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>List of salesforce DX commands</title>
+		<meta charset="utf-8" />
+		<meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="shortcut icon" type="../image/png" href="../images/favicon.png"/>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+					<!-- Header -->
+					<header id="header">
+						<a href="../index.html" class="logo">
+							<strong>ForceLearn</strong>
+						</a>
+						<ul class="icons">
+							<li>
+								<a
+                  href="https://twitter.com/forcelearn"
+                  target="_blank"
+                  class="icon brands fa-twitter"
+                  >
+									<span class="label">Twitter</span>
+								</a
+                >
+							</li>
+							<li>
+								<a
+                  href="https://www.facebook.com/ForceLearn.comsfdc/"
+                  target="_blank"
+                  class="icon brands fa-facebook-f"
+                  >
+									<span class="label">Facebook</span>
+								</a
+                >
+							</li>
+							<li>
+								<a
+                  href="https://in.linkedin.com/company/forcelearn"
+                  target="_blank"
+                  class="icon brands fa-linkedin-in"
+                  >
+									<span class="label">LinkedIn</span>
+								</a
+                >
+							</li>
+							<li>
+								<a
+                  href="https://medium.com/@forcelearn"
+                  target="_blank"
+                  class="icon brands fa-medium-m"
+                  >
+									<span class="label">Medium</span>
+								</a
+                >
+							</li>
+						</ul>
+					</header>
+					<!-- Content -->
+					<section>
+						<header class="main">
+							<h1>List of salesforce DX commands</h1>
+						</header>
+						<span class="image main">
+							<img src="../images/blogpost/Display button on click on checkbox/header.png" alt=""/>
+						</span>
+						<h3>Hi Folks,</h3>
+                        <p>
+                            Nice to see you. </br>
+Hope you visited my previous post on
+                        </p>
+                        <a href="../post/list-salesforce-dx-commands.html" target="_blank">
+                            <span class="label">Learn SalesforceDX Installation and tutorial</span>
+                        </a>
+                        <p>
+                            if not please visit above link to get more information on salesforceDX. </br>
+
+                            Today I want to provide you list of commands which are available in salesforce CLI
+
+                        </p>
+                        <pre><code>
+sfdx force:doc:commands:list
+force:alias:list                # list username aliases for the Salesforce CLI
+force:alias:set                 # set username aliases for the Salesforce CLI
+force:apex:class:create         # create an Apex class
+force:apex:execute              # execute anonymous Apex code
+force:apex:log:get              # fetch a debug log
+force:apex:log:list             # list debug logs
+force:apex:test:report          # display test results
+force:apex:test:run             # invoke Apex tests
+force:auth:jwt:grant            # authorize an org using the JWT flow
+force:auth:sfdxurl:store        # authorize an org using an SFDX auth URL
+force:auth:web:login            # authorize an org using the web login flow
+force:config:get                # get config var values for given names
+force:config:list               # list config vars for the Salesforce CLI
+force:config:set                # set config vars for the Salesforce CLI
+force:data:bulk:delete          #bulk delete records from a csv file
+force:data:bulk:status          # view the status of a bulk data load job or batch
+force:data:bulk:upsert          # bulk upsert records from a CSV file
+force:data:record:create        # create a record
+force:data:record:delete        # delete a record
+force:data:record:get           # view a record
+force:data:record:update        # update a record
+force:data:soql:query           # execute a SOQL query
+force:data:tree:export          # export data from an org into sObject tree format option
+force:data:tree:import          # import data into an org using SObject Tree Save A
+force:doc:commands:display      # display help for force commands
+force:doc:commands:list         # list the force commands
+force:lightning:app:create      # create a Lightning app
+force:lightning:component:create  # create a Lightning component
+force:lightning:event:create      # create a Lightning event
+force:lightning:interface:create  # create a Lightning interface
+force:lightning:lint              # analyse (lint) Lightning component code
+force:lightning:test:create       # create a Lightning test
+force:lightning:test:install      # install Lightning Testing Service unmanaged packa
+force:lightning:test:run          # invoke Lightning component tests
+force:limits:api:display          # display current org’s limits
+force:mdapi:convert               # convert Metadata API source into the Salesforce D
+force:mdapi:deploy                # deploy metadata to an org using Metadata API
+force:mdapi:deploy:report         # check the status of a metadata deployment
+force:mdapi:retrieve              # retrieve metadata from an org using Metadata API
+force:mdapi:retrieve:report       # check the status of a metadata retrieval
+force:org:create                  # create a scratch org
+force:org:delete                  # mark a scratch org for deletion
+force:org:display                 # get org description
+force:org:list                    # list all orgs you’ve created or authenticated to
+force:org:open                    # open an org in your browser
+force:org:shape:create            # create a snapshot of org edition, features, and l
+force:org:shape:delete            # delete all org shapes for a target org
+force:org:shape:list              # list all org shapes you’ve created
+force:package1:version:create     # create a first-generation package version in the
+force:package1:version:create:get # retrieve the status of a package version creation
+force:package1:version:display    # display details about a first-generation package
+force:package1:version:list       # list package versions for the specified first-gen
+force:package2:create             # create a second-generation package
+force:package2:list               # list all second-generation packages in the Dev Hu
+force:package2:update             # update a second-generation package
+force:package2:version:create     # create a second-generation package version
+force:package2:version:create:get # retrieve a package version creation request
+force:package2:version:create:list # list package version creation requests
+force:package2:version:get        # retrieve a package version in the Dev Hub org
+force:package2:version:list       # list all package versions in the Dev Hub org
+force:package2:version:update     # update a second-generation package version
+force:package:install             # install a package in the target org
+force:package:install:get         # retrieve the status of a package installation req
+force:package:installed:list      # list the org’s installed packages
+force:package:uninstall           # uninstall a second-generation package from the ta
+force:package:uninstall:get       # retrieve status of package uninstall request
+force:project:create              # create a new SFDX project
+force:project:upgrade             # update project config files to the latest format
+force:schema:sobject:describe     # describe an object
+force:schema:sobject:list         # list all objects of a specified category
+force:source:convert              # convert Salesforce DX source into the Metadata AP
+force:source:open                 # edit a Lightning Page with Lightning App Builder
+force:source:pull                 # pull source from the scratch org to the project
+force:source:push                 # push source to an org from the project
+force:source:status               # list local changes and/or changes in a scratch or
+force:user:create                 # create a user for a scratch org
+force:user:display                # displays information about a user of a scratch or
+force:user:list                   # lists all users of a scratch org
+force:user:password:generate      # generate a password for scratch org users
+force:user:permset:assign         # assign a permission set to one or more users of a
+force:visualforce:component:create # create a Visualforce component
+force:visualforce:page:create     # create a Visualforce page                        
+</code></pre>
+<p> Happy Learning !!! </p>
+ 								<br>
+									<br>
+										<p>Download: 
+											<a href="https://play.google.com/store/apps/details?id=com.forcelearn.salesforceqa" target="_blank">
+												<span class="label">SalesforceQA</span>
+											</a>
+										</p>
+										<br>
+											<p>
+Please comments us for more updates and share to other to help.
+											</br>
+Keep Visiting us for more updates
+										</br>
+Like us for more updates
+									</br>
+Fb Page : 
+									<a href="https://www.facebook.com/ForceLearn.comsfdc/" target="_blank">
+										<span class="label">ForceLearn</span>
+									</a>
+								</br>
+keep share to help others &nbsp;😎&nbsp;😎&nbsp;😎&nbsp;
+							</p>
+						</section>
+					</div>
+				</div>
+				<!-- Sidebar -->
+				<div id="sidebar">
+					<div class="inner">
+						<!-- Search -->
+						<section id="search" class="alt">
+							<form method="post" action="#">
+								<input type="text" name="query" id="query" placeholder="Search" />
+							</form>
+						</section>
+						<!-- Menu -->
+						<nav id="menu">
+							<header class="major">
+								<h2>Menu</h2>
+							</header>
+							<ul>
+								<li>
+									<a href="../index.html">Home</a>
+								</li>
+								<li>
+									<span class="opener">BlogPost</span>
+									<ul>
+										<li>
+											<a href="../blogpostpages/lwc.html">LWC</a>
+										</li>
+										<li>
+											<a href="../blogpostpages/lightning.html">Lightning</a>
+										</li>
+										<li>
+											<a href="../blogpostpages/visualforce.html">VisualForce</a>
+										</li>
+										<li>
+											<a
+                      href="../pages/salesforce-integration-interview-question-and-answers.html"
+                      >More ..</a
+                    >
+										</li>
+									</ul>
+								</li>
+								<li>
+									<span class="opener">Interview</span>
+									<ul>
+										<li>
+											<a
+                      href="../pages/salesforce-lightning-interview-question-and-answers.html"
+                      >Lightning</a
+                    >
+										</li>
+										<li>
+											<a
+                      href="../pages/apttus-cpq-interview-questions-and-answers.html"
+                      >CPQ</a
+                    >
+										</li>
+										<li>
+											<a
+                      href="../pages/salesforce-visualforce-interview-question-and-answers.html"
+                      >VisualForce</a
+                    >
+										</li>
+										<li>
+											<a
+                      href="../pages/salesforce-integration-interview-question-and-answers.html"
+                      >Integration</a
+                    >
+										</li>
+										<li>
+											<a
+                      href="../pages/salesforce-dev-interview-question-and-answers.html"
+                      >Dev</a
+                    >
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="../pages/about-us.html">About Me</a>
+								</li>
+								<li>
+									<a href="../pages/guest-post.html">Guest Post</a>
+								</li>
+							</ul>
+						</nav>
+						<!-- Section -->
+						<section>
+							<header class="major">
+								<h2>Popular Posts</h2>
+							</header>
+							<div class="mini-posts">
+								<article>
+									<a href="#" class="image"
+                  >
+										<img src="images/pic07.jpg" alt=""
+                />
+									</a>
+									<p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore aliquam.
+                </p>
+								</article>
+								<article>
+									<a href="#" class="image"
+                  >
+										<img src="images/pic08.jpg" alt=""
+                />
+									</a>
+									<p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore aliquam.
+                </p>
+								</article>
+								<article>
+									<a href="#" class="image"
+                  >
+										<img src="images/pic09.jpg" alt=""
+                />
+									</a>
+									<p>
+                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                  dolore aliquam.
+                </p>
+								</article>
+							</div>
+							<ul class="actions">
+								<li>
+									<a href="#" class="button">More</a>
+								</li>
+							</ul>
+						</section>
+						<!-- Section -->
+						<section>
+							<header class="major">
+								<h2>Get in touch</h2>
+							</header>
+							<p>Do you have any queries please reach out us.</p>
+							<ul class="contact">
+								<li class="icon solid fa-envelope">
+									<a href="#">forcelearn@gmail.com</a>
+								</li>
+								<li class="icon solid fa-phone">+91- 9666844498</li>
+								<li class="icon solid fa-home">Bangalore, India</li>
+							</ul>
+						</section>
+						<!-- Footer -->
+						<footer id="footer">
+							<p class="copyright">&copy; ForceLearn. All rights reserved.</p>
+						</footer>
+					</div>
+				</div>
+			</div>
+			<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+		</body>
+	</html>

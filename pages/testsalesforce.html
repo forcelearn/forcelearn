@@ -6,7 +6,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
-		<link rel="shortcut icon" type="../image/png" href="../images/favicon.png"/>
 	</head>
 	<body class="is-preload">
 
@@ -31,49 +30,12 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>About Me</h1>
+										<h1>Visualforce Interview Questions</h1>
 									</header>
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>Hi, I’m Bhanu Prakash</h1>
-											<p>Salesforce Evanaglist</p>
-										</header>
-										<p>Hi, Glad to see you here. My self Bhanu Prakash, currently working at Leading Oil Manfacture company as Salesforce Consultant. Working as Apttus CPQ developer, salesforce Developer, Salesforce Ranger and lightning developer. I love share my knowledge on salesforce Platform. I am a freelance developer and happy to help your resolve queries .
-										</p>
-										<ul class="actions">
-											<li><a href="#" class="button big">About Me</a></li>
-										</ul>
-									</div>
-									<span class="image object">
-										<img src="../images/Bhanu_Prakash_Reddy.jpg" alt="" />
-									</span>
-								</section>
-								</section>
-								<section>
-								<header class="major">
-										<h2>My Sessions</h2>
-									</header>
-								<div class="posts">
-								<article>
-									<iframe src="https://drive.google.com/file/d/1M1lIsBFMp_1Girq8xY2kve_hExD4yRBV/preview" width="363" height="280"></iframe>
-									<h3>Demistifiying Lightning Web Components and Introduction to lWC OpenSource</h3>
-								</article>
-								<article>
-										<iframe src="https://drive.google.com/file/d/1npd52VZZ6u6b36cv7gMgBfmaoMUasN_k/preview" width="363" height="280"></iframe>
-										<h3>Google Chrome Extenstion for Salesforce Developers in BLRDEVX</h3>
-								</article>
-								<article>
-									
-								</article>
-								<article>
-										<div id="trailhead-widget-container">
-												<img src="https://jitendrazaa.com/loading.gif" />
-											 </div>
-											 <script async src="https://jitendrazaa.com/Trailhead.php?profileId=bhanuprakash" type="text/javascript">  </script>
-							</article>
-							</section>
 
+									<section>
+										<div style="width:30%;height:100px;" id="LightningComponentid" />  
+									</section>
 						</div>
 					</div>
 
@@ -98,9 +60,9 @@
 										<li>
 											<span class="opener">BlogPost</span>
 											<ul>
-												<li><a href="../pages/salesforce-lightning-interview-question-and-answers.html">LWC</a></li>
-												<li><a href="../pages/apttus-cpq-interview-questions-and-answers.html">Lightning</a></li>
-												<li><a href="../pages/salesforce-visualforce-interview-question-and-answers.html">VisualForce</a></li>
+												<li><a href="../blogpostpages/lwc.html">LWC</a></li>
+												<li><a href="../blogpostpages/lightning.html">Lightning</a></li>
+												<li><a href="../blogpostpages/visualforce.html">VisualForce</a></li>
 												<li><a href="../pages/salesforce-integration-interview-question-and-answers.html">More ..</a></li>											
 											</ul>
 										</li>
@@ -166,7 +128,19 @@
 					</div>
 
 			</div>
-
+			<!-- Salesforce Script-->
+			<script>
+				$Lightning.use("c:test", function() {
+					$Lightning.createComponent("c:testapp",
+											   { 
+												   /*  you can add your custom css */
+											   },
+											   "LightningComponentid",
+											   function(cmp) {
+												   console.log('Display Lightning component in visualforce page');
+											   });
+				});
+				</script>
 		<!-- Scripts -->
 			<script src="../assets/js/jquery.min.js"></script>
 			<script src="../assets/js/browser.min.js"></script>

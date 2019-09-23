@@ -69,7 +69,23 @@
 							<!-- Section -->
 								<section>
 									<header class="major">
-										<h2>Blog Post</h2>
+										<div style="text-align: center;">
+											<h1>DreamForce 2019 Counter</h1>
+											<p id="demo" style="
+											height: 49px;
+											font-size: 40px;
+											color: #da1717;
+											padding: 3px;
+											text-align: center;
+											font-family: TrendSansOne;
+										"></p> 
+										<div style="text-align: center;">
+								<a href="https://www.salesforce.com/dreamforce/" class="button"> Check here</a>
+							</div>
+										</br></br>
+							</div>
+						
+								<h2>Blog Post</h2>
 									</header>
 									<div class="posts">
 										<article>
@@ -265,7 +281,37 @@
 					</div>
 
 			</div>
-
+<!-- Timer Script-->
+<script>
+	// Set the date we're counting down to
+	var countDownDate = new Date("Nov 19, 2019 12:00:00").getTime();
+	
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+	
+	  // Get today's date and time
+	  var now = new Date().getTime();
+		
+	  // Find the distance between now and the count down date
+	  var distance = countDownDate - now;
+		
+	  // Time calculations for days, hours, minutes and seconds
+	  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		
+	  // Output the result in an element with id="demo"
+	  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+	  + minutes + "m " + seconds + "s ";
+		
+	  // If the count down is over, write some text 
+	  if (distance < 0) {
+		clearInterval(x);
+		document.getElementById("demo").innerHTML = "EXPIRED";
+	  }
+	}, 1000);
+	</script>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>

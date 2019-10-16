@@ -33,9 +33,7 @@
 										<h1>Visualforce Interview Questions</h1>
 									</header>
 
-									<section>
-										<p id="demo"></p> 
-									</section>
+								
 						</div>
 					</div>
 
@@ -128,37 +126,7 @@
 					</div>
 
 			</div>
-			<!-- Timer Script-->
-			<script>
-				// Set the date we're counting down to
-				var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
-				
-				// Update the count down every 1 second
-				var x = setInterval(function() {
-				
-				  // Get today's date and time
-				  var now = new Date().getTime();
-					
-				  // Find the distance between now and the count down date
-				  var distance = countDownDate - now;
-					
-				  // Time calculations for days, hours, minutes and seconds
-				  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-				  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-				  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-				  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-					
-				  // Output the result in an element with id="demo"
-				  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-				  + minutes + "m " + seconds + "s ";
-					
-				  // If the count down is over, write some text 
-				  if (distance < 0) {
-					clearInterval(x);
-					document.getElementById("demo").innerHTML = "EXPIRED";
-				  }
-				}, 1000);
-				</script>
+
 		<!-- Scripts -->
 			<script src="../assets/js/jquery.min.js"></script>
 			<script src="../assets/js/browser.min.js"></script>
@@ -194,5 +162,73 @@
  (adsbygoogle = window.adsbygoogle || []).push({});
 </script> 
 
-	</body>
+<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+<script type='text/javascript'>
+    var initESW = function(gslbBaseURL) {
+        embedded_svc.settings.displayHelpButton = true; //Or false
+        embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+
+        //embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+        //embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+
+        //embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
+        //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+
+        // Settings for Chat
+        //embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+            // Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+            // Returns a valid button ID.
+        //};
+        //embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
+        //embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
+        //embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
+
+        embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+        embedded_svc.settings.entryFeature = 'LiveAgent';
+
+        embedded_svc.init(
+            'https://forcelearn-dev-ed.my.salesforce.com',
+            'https://forcelearn-developer-edition.ap5.force.com/',
+            gslbBaseURL,
+            '00D7F000001ttbh',
+            'ForceLearnChat',
+            {
+                baseLiveAgentContentURL: 'https://c.la1-c1-hnd.salesforceliveagent.com/content',
+                deploymentId: '5727F000000gEd2',
+                buttonId: '5737F000000HC9T',
+                baseLiveAgentURL: 'https://d.la1-c1-hnd.salesforceliveagent.com/chat',
+                eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I7F000000GnfDUAS_16dd4ff53fe',
+                isOfflineSupportEnabled: false
+            }
+        );
+    };
+
+    if (!window.embedded_svc) {
+        var s = document.createElement('script');
+        s.setAttribute('src', 'https://forcelearn-dev-ed.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+        s.onload = function() {
+            initESW(null);
+        };
+        document.body.appendChild(s);
+    } else {
+        initESW('https://service.force.com');
+    }
+</script>
+<style type='text/css'>
+    .embeddedServiceHelpButton .helpButton .uiButton {
+        background-color: #67A1CE;
+        font-family: "Salesforce Sans", sans-serif;
+    }
+    .embeddedServiceHelpButton .helpButton .uiButton:focus {
+        outline: 1px solid #67A1CE;
+    }
+    @font-face {
+        font-family: 'Salesforce Sans';
+        src: url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.woff') format('woff'),
+        url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.ttf') format('truetype');
+    }
+</style>
+
+
+</body>
 </html>

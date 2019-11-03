@@ -25,23 +25,22 @@
 			}
 		</style>
 		<!-- Component-->
-		<div id="lightning"></div>
-			<script src="https://forcelearnco-developer-edition.ap5.force.com/lightning/lightning.out.js"></script>
-			<script type="text/javascript">
-				$Lightning.use("c:SalesforceBloggerList", function() {  
-				
-					$Lightning.createComponent("c:LeadCreationComponent", {
-						},
-						"lightning",
-						function(cmp) {
-							console.log("LWC component was created");
-							// do some stuff
-						}
-					);
-					},
-				'https://forcelearnco-developer-edition.ap5.force.com/s/'
-				);
-			</script>
+		<div id="componentHolder">
+		</div>
+		<script src=" https://forcelearnco-developer-edition.ap5.force.com/ForceLearn/lightning/lightning.out.js"></script>
+		
+		<script>
+			$Lightning.use("c:HelloForceLearnApp", function() {
+			$Lightning.createComponent("c:HelloForceLearn",
+			{ },
+		   "componentHolder",
+			function(component) {
+			  console.log("LWC component was created");
+			});
+		 },
+		   ' https://forcelearnco-developer-edition.ap5.force.com/ForceLearn/s/',
+		   'session-id');
+		 </script>
 		
 		<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 		<script type='text/javascript'>
